@@ -1,0 +1,89 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #98b5d1; /* Warna latar belakang */
+}
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.7); /* Warna putih sedikit transparan */
+    z-index: -1; /* Agar berada di belakang konten */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Kotak di dalam overlay */
+.box {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    justify-content: center;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Efek bayangan */
+}
+header {
+    background-color: #2c4969; /* Warna biru langit */
+    color: white;
+    text-align: center;
+    padding: 20px 0; /* Perbesar padding untuk header */
+    box-shadow: 0 2px 4px rgba(238, 236, 236, 0.1); /* Efek bayangan */
+}
+footer {
+    background-color: #242f3b; /* Warna biru muda */
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1); /* Efek bayangan */
+}
+main {
+    flex: 1;
+    padding: 20px;
+}
+#map {
+    height: 80vh;
+    width: 100%;
+}
+nav {
+    background-color: #4a5158; /* Warna biru langit */
+    text-align: center;
+    padding: 10px 0;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: 0.3s ease; /* Efek transisi */
+}
+nav a:hover {
+    text-decoration: underline;
+    opacity: 0.8; /* Kurangi kecerahan saat hover */
+}
+/* Tambahkan gaya untuk bagian welcome-section */
+.welcome-section {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.welcome-section img {
+    width: 50%; /* Sesuaikan ukuran gambar dengan kebutuhan */
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Efek bayangan */
+}
+
+.welcome-section h2 {
+    margin-top: 20px;
+    font-size: 24px;
+}
+
+.welcome-section p {
+    font-size: 18px;
+    color: #555;
+    margin-top: 10px;
+}

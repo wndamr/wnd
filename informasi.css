@@ -1,0 +1,57 @@
+.bandara {
+    margin-bottom: 30px;
+}
+
+.bandara-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Tiga bandara per baris */
+    gap: 20px; /* Jarak antar bandara */
+}
+
+.bandara-item {
+    display: flex;
+    flex-direction: column; /* Bandara diatur secara vertikal */
+    align-items: center;
+    margin-bottom: 20px;
+    cursor: pointer; /* Ganti cursor menjadi pointer */
+}
+
+
+.bandara-detail h3 {
+    font-size: 20px; /* Mengurangi ukuran teks nama bandara */
+    margin-bottom: 5px; /* Spasi bawah */
+    text-align: center; /* Pusatkan teks */
+}
+
+.bandara-gambar {
+    text-align: center; /* Pusatkan gambar */
+}
+
+.bandara-gambar img {
+    max-width: 100%; /* Gambar mengikuti lebar parent */
+    height: auto;
+    cursor: pointer;
+    border-radius: 10px; /* Tambahkan sudut bulat */
+    transition: transform 0.3s;
+}
+
+.bandara-gambar img:hover {
+    transform: scale(1.05); /* Perbesar sedikit saat hover */
+}
+.detail-bandara {
+    display: none;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.detail-content {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.detail-content h3 {
+    color: #4a90e2;
+    text-align: center;
+}
